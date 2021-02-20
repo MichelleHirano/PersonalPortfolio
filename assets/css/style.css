@@ -108,3 +108,11 @@
  }
 
  /*Content Styling*/
+
+ .content h2{
+   color: var(--title-text)
+ }
+
+ .content p{
+   color: var(--body-text)
+ }
