@@ -107,7 +107,7 @@
   font-size: 50px;
  }
 
- /*Content Styling*/
+ /*Info Banner Styling*/
 
  .content{
    display:flex;
@@ -115,6 +115,8 @@
    justify-content:space-around;
    width: 100%;
    margin: 0 auto;
+   flex-direction: row;
+   text-align: center;
  }
 
  .content h2{
@@ -125,10 +127,50 @@
    color: var(--body-text)
  }
 
- .my-work,
- .about-me,
- .contact-me{
+ .work,
+ .about,
+ .contact{
    margin: 20px;
    flex: 1;
-   
  }
+
+ #icon1,
+ #icon2,
+ #icon3{
+  float: left;
+  width: 35%;
+ }
+
+ .meat{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+ }
+ /*Explore My Work Stylings*/
+ .contenttitle{
+   color: var(--title-text);
+   text-align: left;
+ }
+
+
+ .row2{
+   display: flex;
+   flex-direction: row;
+   flex: 1;
+   align-items: center;
+ }
+
+ .row2photo{
+   width: 50%;
+   height:auto;
+ }
+
+ /*About Me Stylings*/
+ #myphoto{
+  width:20%;
+  height:auto;
+  float: left;
+ }
+
+
+ /*Contact Me Stylings*/
