@@ -95,11 +95,11 @@
    flex-wrap: wrap;
    justify-content:space-around;
    width: 100%;
-   margin: 0 auto;
+   margin: 100px auto;
    flex-direction: row;
  }
 
- .content-title{
+.page-title{
    color: var(--title-text);
    padding: 50px 15px;
    margin: 100px auto;
@@ -112,7 +112,11 @@
 
  .content h2{
    color: var(--title-text);
-   justify-content: flex-start;
+   flex-direction: column;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 20px auto;
  }
 
  .content p{
@@ -124,21 +128,24 @@
  .work,
  .about,
  .contact{
-   margin: 20px;
+   margin: 15px auto;
    flex: 1;
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
+   flex-direction: column;
+   justify-content: center;
  }
 
  #icon1,
  #icon2,
  #icon3{
-  float: left;
   width: 20%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px auto;
  }
 
  .meat{
@@ -146,6 +153,17 @@
    flex-wrap: wrap;
    flex-direction: column;
  }
+
+ /*Meat Stylings*/
+ #my-work,
+ #about-me,
+ #contact-me{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+ }
+
  /*Explore My Work Stylings*/
  .contenttitle{
    color: var(--title-text);
@@ -171,6 +189,9 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px auto;
 }
 
  .row2{
@@ -180,6 +201,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   justify-items:center;
+  margin: 50px auto;
  }
 
  .row2photo{
@@ -188,6 +210,7 @@
    margin: 30px auto;
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 
  }
 
