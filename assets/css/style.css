@@ -15,14 +15,6 @@
     color: var(--body-text);
    font-family: Arial, Helvetica, sans-serif;
   }
-
-  .mlogo{
-      z-index:100 ;
-      width:50px;
-      height:40px;
-      margin: 0 auto;
-  }
-
   
   /* Header Style*/
 
@@ -33,9 +25,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
-    background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -43,24 +33,13 @@
   }
 
 
-
 /*NavBar*/
-  
 
-  header h1 {
-    font-weight: thin;
-    margin: 0;
-    font-size: 30px;
-    color: var(--title-text);
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
   header a {
     text-decoration: none;
     color: var(--title-text);
   }
+
   
   header nav {
     margin: 7px 0;
@@ -75,10 +54,12 @@
   }
   
   header nav ul li a {
-    padding: 10px 15px;
+    padding: 30px 25px;
     font-weight: lighter;
     font-size: 1.55vw;
+    display: inline-block;
   }
+
   
   header nav ul li a:hover {
     background: var(--background-color);
@@ -86,12 +67,15 @@
     border-radius: 15px;
   }
 
+
   /*Hero*/
 
   .hero{
     position: relative;
     text-align: center;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
   }
 
  #heroimg{
@@ -99,15 +83,10 @@
    background-position: center;
    position: relative;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
  }
 
- #hero-text{
-   color: var(--background-color);
-   font-weight: bold;
-   transform: translateY(-700%) translateX(-25%);
-   z-index: 999;
-  font-size: 50px;
- }
 
  /*Info Banner Styling*/
 
@@ -118,15 +97,28 @@
    width: 100%;
    margin: 0 auto;
    flex-direction: row;
+ }
+
+ .content-title{
+   color: var(--title-text);
+   padding: 50px 15px;
+   margin: 100px auto;
    text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
  }
 
  .content h2{
-   color: var(--title-text)
+   color: var(--title-text);
+   justify-content: flex-start;
  }
 
  .content p{
-   color: var(--body-text)
+   color: var(--body-text);
+   margin: 10px auto;
+   text-align: center;
  }
 
  .work,
@@ -134,13 +126,19 @@
  .contact{
    margin: 20px;
    flex: 1;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
  }
 
  #icon1,
  #icon2,
  #icon3{
   float: left;
-  width: 35%;
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
  }
 
  .meat{
@@ -153,6 +151,8 @@
    color: var(--title-text);
    text-align: center;
    margin: 50px auto;
+   display: flex;
+   flex-wrap: wrap;
 
  }
 
@@ -162,12 +162,15 @@
   flex-wrap: wrap;
   align-content: center;
   margin: 75px auto;
-  
+  display: flex;
+  flex-wrap: wrap;
  }
 
 #workexample{
   width: 50%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
  .row2{
@@ -176,13 +179,15 @@
    flex: 1;
   justify-content: space-between;
   flex-wrap: wrap;
-  justify-items:center ;
+  justify-items:center;
  }
 
  .row2photo{
    width: 35%;
    height:auto;
    margin: 30px auto;
+   display: flex;
+   flex-wrap: wrap;
 
  }
 
@@ -192,12 +197,15 @@
   height:auto;
   align-items: center;
   margin: 75px auto;
+  display: flex;
+  flex-wrap: wrap;
  }
 
 
  /*Contact Me Stylings*/
 .LI-profile-badge {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin: 75px auto;
