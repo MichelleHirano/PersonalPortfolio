@@ -12,14 +12,19 @@
   }
 
   body {
-    color: var(--body-text);
+   color: var(--body-text);
    font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   justify-content: flex-start;
   }
   
   /* Header Style*/
 
   header {
     padding: 20px 35px;
+    margin: auto;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -31,6 +36,8 @@
     background-position: 80%;
     z-index: 200;
   }
+
+  
 
 
 /*NavBar*/
@@ -71,20 +78,20 @@
   /*Hero*/
 
   .hero{
-    position: relative;
     text-align: center;
     color: white;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
  #heroimg{
-   height: 600px;
+   height: 500px;
    background-position: center;
-   position: relative;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
  }
 
 
@@ -185,7 +192,7 @@
  }
 
 #workexample{
-  width: 50%;
+  width: 75%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -204,9 +211,13 @@
   margin: 50px auto;
  }
 
- .row2photo{
-   width: 35%;
-   height:auto;
+ .row2photoB{
+   width: 60% ;
+   height: auto;
+ }
+
+ .row2photoA,
+ .row2photoB{
    margin: 30px auto;
    display: flex;
    flex-wrap: wrap;
@@ -232,4 +243,36 @@
   flex-direction: column;
   align-items: center;
   margin: 75px auto;
+}
+
+/*Media Query*/
+
+/* Smaller Screens */
+@media screen and (max-width: 980px) {
+#heroimg{
+  width: auto;
+  height: auto;
+}
+
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  #heroimg{
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 575px) {
+  #heroimg{
+    width: auto;
+    height: auto;
+  }
+
+  .content{
+    margin: 0px auto;
+  }
+
 }
