@@ -191,6 +191,8 @@
   flex-wrap: wrap;
  }
 
+
+
 #workexample{
   width: 75%;
   height: auto;
@@ -224,6 +226,11 @@
    justify-content: center;
 
  }
+
+ .row4{
+  width: 60% ;
+  height: auto;
+}
 
  /*About Me Stylings*/
  #myphoto{
